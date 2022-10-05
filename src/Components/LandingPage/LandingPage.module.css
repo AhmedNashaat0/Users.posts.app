@@ -1,0 +1,169 @@
+.landingContainer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.landing {
+  width: 80%;
+  border: 1px solid var(--heading-color);
+  border-radius: 30px;
+  padding: 20px;
+  margin: 0;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: animate 0.8s ease-out forwards;
+}
+
+.welcomeMsg {
+  width: 55%;
+  margin: 0 15px 0 15px;
+}
+.welcomeMsg h1 {
+  padding-bottom: 20px;
+  color: var(--heading-color);
+}
+
+.welcomeMsg p {
+  font-family: "Kalam", cursive;
+  font-size: 20px;
+  padding-top: 15px;
+  color: var(--text-color);
+}
+
+.image img {
+  width: 400px;
+  height: 300px;
+  border-radius: 50px;
+}
+
+.start {
+  margin-top: 30px;
+  padding: 25px;
+  background-color: transparent;
+  border: 1px solid var(--heading-color);
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--orange-color);
+  border-radius: 40px;
+  cursor: pointer;
+  animation: animate 0.8s ease-out forwards;
+  transition: 0.5s;
+}
+
+/* animation */
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: translateY(-30%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* x-small devices */
+@media (max-width: 575.9px) {
+  .landing {
+    width: 80%;
+    height: 30%;
+  }
+  .welcomeMsg {
+    width: 90%;
+  }
+  .welcomeMsg h1 {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
+  .welcomeMsg p {
+    padding-top: 30px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  .image img {
+    display: none;
+  }
+  .start {
+    padding: 20px;
+    font-size: 16px;
+  }
+}
+/* ipads and tablets */
+@media (min-width: 576px) {
+  .landing {
+    width: 85%;
+    height: 40%;
+  }
+  .welcomeMsg h1 {
+    font-size: 17px;
+    padding-bottom: 5px;
+  }
+  .welcomeMsg p {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  .image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+  }
+}
+/* small screens and laptops */
+@media (min-width: 768px) {
+  .welcomeMsg h1 {
+    font-size: 24px;
+    padding-bottom: 15px;
+  }
+  .welcomeMsg p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}
+/* large screen */
+@media (min-width: 992px) {
+  .landing {
+    width: 80%;
+    height: 50%;
+  }
+  .welcomeMsg h1 {
+    font-size: 28px;
+    padding-bottom: 20px;
+  }
+  .welcomeMsg p {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  .image img {
+    width: 400px;
+    height: 370px;
+    border-radius: 100px;
+  }
+}
+/* extra large screens and TV */
+@media (min-width: 1200px) {
+  .landing {
+    width: 80%;
+    height: 50%;
+  }
+  .welcomeMsg h1 {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+  .welcomeMsg p {
+    font-size: 22px;
+    line-height: 1.6;
+  }
+  .image img {
+    width: 400px;
+    height: 370px;
+    border-radius: 50px;
+  }
+}

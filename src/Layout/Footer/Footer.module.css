@@ -1,0 +1,24 @@
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 30px 0;
+  border-top: 1px solid var(--heading-color);
+}
+
+.contactIcons {
+  padding: 10px 0 20px 0;
+  font-size: 30px;
+}
+
+.contactIcons a {
+  padding: 12px;
+  color: var(--heading-color);
+  transition: 0.5s;
+  border-radius: 20px;
+}
+
+.contactIcons a:hover {
+  background-color: var(--orange-color);
+}

@@ -1,0 +1,150 @@
+.card {
+  padding: 10px;
+  color: var(--text-color);
+  border-radius: 20px;
+  transition: 1s;
+  margin-bottom: 20px;
+  background-color: rgb(255, 255, 255);
+}
+.card:hover {
+  box-shadow: 0 0 8px -1px white;
+  transform: scale(1.02);
+}
+
+.card h2 {
+  margin: 0 0 15px 0;
+  color: var(--heading-color);
+  border-bottom: 1px solid var(--heading-color);
+  text-align: center;
+}
+.card ul {
+  list-style: none;
+  width: 80%;
+  height: 65%;
+}
+
+.card ul li {
+  font-size: 18px;
+  padding-bottom: 20px;
+  color: var(--heading-color);
+}
+.card ul li .infoIcons {
+  padding-right: 10px;
+  color: var(--orange-color);
+}
+.card ul li a {
+  color: var(--heading-color);
+  transition: 0.7s;
+}
+.card ul li a:hover {
+  color: var(--orange-color);
+}
+
+.card .btn {
+  text-align: center;
+  margin: 50px 0 50px 0;
+}
+.card .btn .showPosts {
+  font-size: 20px;
+  color: var(--orange-color);
+  background-color: transparent;
+  border: 1px solid var(--text-color);
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px 25px 10px 25px;
+  opacity: 0.7;
+  transition: 0.7s;
+}
+.card .btn .showPosts:hover {
+  opacity: 1;
+}
+
+/* x-small devices */
+@media (max-width: 575.9px) {
+  .card {
+    width: 95%;
+  }
+
+  .card h2 {
+    font-size: 16px;
+    padding: 10px 15px 10px 5px;
+  }
+  .card ul {
+    padding-left: 15px;
+    list-style: none;
+    width: 100%;
+  }
+  .card ul li {
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+  .card .btn {
+    margin: 20px 0 15px 0;
+  }
+  .card .btn .showPosts {
+    font-size: 15px;
+  }
+}
+/* ipads and tablets */
+@media (min-width: 576px) {
+  .card {
+    margin: 10px 10px 0 10px;
+    width: 90%;
+  }
+
+  .card h2 {
+    font-size: 18px;
+    padding: 10px 0px 10px 5px;
+    margin-bottom: 15px;
+  }
+  .card ul {
+    padding-left: 5px;
+    height: 70%;
+    width: 95%;
+  }
+  .card ul li {
+    font-size: 15px;
+    padding-bottom: 15px;
+  }
+
+  .card .btn {
+    margin: 10px 0 50px 0;
+  }
+}
+/* small screens and laptops */
+@media (min-width: 768px) {
+  .card {
+    width: 80%;
+    margin: 0;
+  }
+
+  .card h2 {
+    font-size: 18px;
+    padding: 15px 0 15px 15px;
+    margin: 15px 0 20px 0;
+  }
+  .card ul {
+    padding-left: 20px;
+    height: 65%;
+  }
+  .card ul li {
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+  .card .btn {
+    margin-top: 10px;
+  }
+}
+/* large screens */
+@media (min-width: 992px) {
+  .card {
+    width: 87%;
+  }
+  .card h2 {
+    font-size: 21px;
+    padding-bottom: 20px;
+  }
+  .card ul li {
+    font-size: 16px;
+  }
+}

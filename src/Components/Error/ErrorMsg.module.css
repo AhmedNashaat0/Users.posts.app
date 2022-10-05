@@ -1,0 +1,26 @@
+.error {
+  height: 100vh;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.errorMsg {
+  color: var(--orange-color);
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid var(--text-color);
+  border-radius: 50px;
+  padding: 30px;
+  width: 300px;
+}
+.something {
+  font-size: 20px;
+  color: var(--heading-color);
+}
+
+.error p {
+  border-radius: 20px;
+}

@@ -1,0 +1,82 @@
+.menuBar {
+  background-color: white;
+  width: 25%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  border: none;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  border-radius: 40px;
+  top: -35px;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.menuBar ul {
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  text-align: center;
+  margin-top: 20px;
+}
+.menuBar a {
+  width: calc(100% / 3);
+  text-decoration: none;
+}
+.menuBar a:hover {
+  color: var(--background-color);
+}
+.menuBar li {
+  margin: 0;
+  padding: 25px;
+  transition: 0.5s;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 1s;
+  color: var(--heading-color);
+}
+.menuBar li:hover {
+  background-color: var(--orange-color);
+  color: #fff;
+}
+
+/* xsmall devices */
+@media (max-width: 576px) {
+  .menuBar {
+    width: 60%;
+  }
+  .menuBar li {
+    font-size: 14px;
+    padding-left: 10px;
+  }
+}
+
+/* small devices */
+@media (min-width: 576px) {
+  .menuBar {
+    width: 50%;
+  }
+  .menuBar li {
+    font-size: 18px;
+  }
+}
+/* large screen */
+@media (min-width: 992px) {
+  .menuBar {
+    width: 30%;
+  }
+  .menuBar li {
+    font-size: 20px;
+  }
+}
+
+/* xlarge screen*/
+@media (min-width: 1200px) {
+  .menuBar {
+    width: 25%;
+  }
+}

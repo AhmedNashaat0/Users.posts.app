@@ -1,22 +1,27 @@
 import "./App.css";
 import { Fragment } from "react";
 import { Route, Switch } from "react-router-dom";
+
+import UsersPage from "./Components/UsersPage/UsersPage";
 import HomePage from "./Components/HomePage/HomePage";
-import LandingPage from "./Components/LandingPage/LandingPage";
 import PostsPage from "./Components/PostsPage/PostsPage";
+import AboutUs from "./Components/About/AboutUs";
 
 function App() {
   return (
     <>
       <Switch>
         <Route path="/" exact>
-          <LandingPage />
-        </Route>
-        <Route path="/homePage" exact>
           <HomePage />
         </Route>
-        <Route path="/homePage/:postId">
+        <Route path="/usersPage" exact>
+          <UsersPage />
+        </Route>
+        <Route path="/usersPage/:userId/:name">
           <PostsPage />
+        </Route>
+        <Route path="/about">
+          <AboutUs />
         </Route>
       </Switch>
     </>

@@ -4,10 +4,10 @@
   border-radius: 20px;
   transition: 1s;
   margin-bottom: 20px;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--background-color);
 }
 .card:hover {
-  box-shadow: 0 0 8px -1px white;
+  box-shadow: 0 0 8px -1px var(--background-color);
   transform: scale(1.02);
 }
 
@@ -83,9 +83,10 @@
   }
   .card .btn .showPosts {
     font-size: 15px;
+    margin-bottom: 10px;
   }
 }
-/* ipads and tablets */
+/* small devices and ipads */
 @media (min-width: 576px) {
   .card {
     margin: 10px 10px 0 10px;

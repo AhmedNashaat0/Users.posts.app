@@ -1,32 +1,63 @@
 .postsPageContainer {
   padding: 0 110px 0 110px;
   display: grid;
-  grid-template-columns: 50%;
+  grid-template-columns: 70%;
   justify-content: center;
+  margin-top: 100px;
 }
-
+.userName {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--text-color);
+  width: 32%;
+}
+.userName .userIcon {
+  font-size: 34px;
+  padding-right: 10px;
+  color: var(--orange-color);
+}
+.userName .name {
+  color: var(--heading-color);
+  font-size: 24px;
+  font-weight: bold;
+}
 .postsList {
   width: 100%;
   padding: 0;
   margin: 0;
   list-style: none;
   animation: animatedPosts 0.5s linear forwards;
+  text-align: center;
+  margin-bottom: 50px;
 }
 .postsList .postCard {
   padding: 15px;
   border: 1px solid var(--text-color);
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   border-radius: 10px;
+  background-color: var(--background-color);
   transition: 1s;
   cursor: pointer;
   position: relative;
 }
 
-.postCard h2 {
+.postCard .heading {
   margin-top: 0;
   padding: 20px 10px 10px 10px;
   color: var(--heading-color);
 }
+.heading.addBorder {
+  border-bottom: 1px solid var(--heading-color);
+}
+.postBody {
+  display: none;
+}
+.postBody.show {
+  display: block;
+}
+
+/* animation */
 
 @keyframes animatedPosts {
   0% {
@@ -44,6 +75,7 @@
   .postsPageContainer {
     padding: 0 50px 0 50px;
     grid-template-columns: 100%;
+    margin-top: 100px;
   }
 
   .postCard h2 {
@@ -57,7 +89,7 @@
   }
 }
 
-/* small devices */
+/* ipad and tablets */
 
 @media (max-width: 772px) {
   .postsPageContainer {
@@ -74,5 +106,3 @@
     padding-bottom: 10px;
   }
 }
-
-/*  */

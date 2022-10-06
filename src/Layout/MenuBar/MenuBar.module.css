@@ -1,17 +1,15 @@
 .menuBar {
-  background-color: white;
-  width: 25%;
+  background-color: var(--orange-color);
+  width: 30%;
   position: fixed;
-  display: flex;
-  justify-content: center;
   border: none;
   left: 50%;
   transform: translateX(-50%);
-  position: relative;
   border-radius: 40px;
   top: -35px;
   overflow: hidden;
-  margin-bottom: 100px;
+  text-align: center;
+  z-index: 10;
 }
 
 .menuBar ul {
@@ -19,64 +17,72 @@
   padding: 0;
   list-style: none;
   display: flex;
-  margin: 0;
   text-align: center;
+  margin: 0;
   margin-top: 20px;
 }
 .menuBar a {
-  width: calc(100% / 3);
+  width: calc(100% / 4);
   text-decoration: none;
 }
+
 .menuBar a:hover {
   color: var(--background-color);
 }
+
 .menuBar li {
-  margin: 0;
-  padding: 25px;
+  padding: 20px;
   transition: 0.5s;
   cursor: pointer;
   font-size: 20px;
   transition: 1s;
-  color: var(--heading-color);
+  color: var(--background-color);
 }
 .menuBar li:hover {
-  background-color: var(--orange-color);
-  color: #fff;
+  background-color: var(--background-color);
+  color: var(--heading-color);
 }
 
 /* xsmall devices */
 @media (max-width: 576px) {
   .menuBar {
-    width: 60%;
+    width: 65%;
   }
   .menuBar li {
     font-size: 14px;
-    padding-left: 10px;
+    padding: 20px 10px 15px 5px;
   }
 }
 
 /* small devices */
 @media (min-width: 576px) {
   .menuBar {
-    width: 50%;
+    width: 60%;
   }
   .menuBar li {
     font-size: 18px;
   }
 }
+
+@media (min-width: 768px) {
+  .menuBar {
+    width: 50%;
+  }
+}
 /* large screen */
 @media (min-width: 992px) {
   .menuBar {
-    width: 30%;
+    width: 35%;
   }
   .menuBar li {
     font-size: 20px;
+    padding: 20px;
   }
 }
 
 /* xlarge screen*/
 @media (min-width: 1200px) {
   .menuBar {
-    width: 25%;
+    width: 30%;
   }
 }

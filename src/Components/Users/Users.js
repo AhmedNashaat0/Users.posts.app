@@ -42,7 +42,7 @@ const Users = (props) => {
         </li>
       </ul>
       <div className={classes.btn}>
-        <Link to={{ pathname: `/homePage/${props.id}`, props: props.name }}>
+        <Link to={`/usersPage/${props.id}/${props.name}`}>
           <button className={classes.showPosts}>Show Posts</button>
         </Link>
       </div>

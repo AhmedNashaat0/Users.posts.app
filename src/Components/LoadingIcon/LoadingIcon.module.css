@@ -21,6 +21,9 @@
 .load .three {
   animation-delay: 0.6s;
 }
+
+/* animation */
+
 @keyframes up-and-down {
   to {
     opacity: 0.2;

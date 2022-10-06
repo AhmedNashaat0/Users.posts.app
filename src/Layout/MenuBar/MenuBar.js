@@ -1,5 +1,5 @@
-import classes from "./MenuBar.module.css";
 import { Fragment } from "react";
+import classes from "./MenuBar.module.css";
 import { Link } from "react-router-dom";
 
 const MenuBar = () => {
@@ -8,10 +8,13 @@ const MenuBar = () => {
       <div className={classes.menuBar}>
         <ul>
           <Link to="/">
-            <li>Landing</li>
-          </Link>
-          <Link to="/homePage">
             <li>Home</li>
+          </Link>
+          <Link to="/usersPage">
+            <li>Users</li>
+          </Link>
+          <Link to="/about">
+            <li>About</li>
           </Link>
           <a href="#footer">
             <li>Contact</li>

@@ -6,7 +6,7 @@ const Footer = () => {
   const year = date.getFullYear();
   return (
     <div id="footer" className={classes.footerContainer}>
-      <h3>Contact Us</h3>
+      <h2>Contact Us</h2>
       <div className={classes.contactIcons}>
         <a
           href="https://github.com/AhmedNashaat0"

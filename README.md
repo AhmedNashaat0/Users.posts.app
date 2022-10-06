@@ -1,11 +1,14 @@
 # about this project
 
-This is a simple page application to list users and posts retrieved from [https://jsonplaceholder.typicode.com/] JSON Placeholder API
+This is a simple page application to list users and posts retrieved from  [JSON Placeholder API](https://jsonplaceholder.typicode.com/)
 It conatins the following pages :
-landing Page , Home Page and Posts Page
+HomePage , UsersPage ,PostsPage and About.
 
-Home page contains a welcome message.
-Users page display the
+- HomePage contains a welcome message.
+- UsersPage display a list of users.
+- AboutPage describes the app.
+
+Every user has a card with his own informations and you can visit his posts by Show posts button.
 
 # Getting Started with Create React App
 

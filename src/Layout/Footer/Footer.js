@@ -1,15 +1,16 @@
 import classes from "./Footer.module.css";
 import { FaGithub, FaFacebook, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import Headers from "../Headers/Headers";
 
 const Footer = () => {
   const date = new Date();
   const year = date.getFullYear();
   return (
     <div id="footer" className={classes.footerContainer}>
-      <h2>Contact Us</h2>
+      <Headers>CONTACT</Headers>
       <div className={classes.contactIcons}>
         <a
-          href="https://github.com/AhmedNashaat0"
+          href="https://github.com/AhmedNashaat0/Users.posts.app"
           rel="noreferrer"
           target="_blank"
         >

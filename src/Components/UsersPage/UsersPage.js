@@ -10,6 +10,7 @@ import { useQuery } from "react-query";
 import LoadingIcon from "../LoadingIcon/LoadingIcon";
 import { fetchHandler } from "../../fetchApi";
 import ErrorMsg from "../Error/ErrorMsg";
+import Headers from "../../Layout/Headers/Headers";
 
 const UsersPage = () => {
   const { data, error, isError, isLoading } = useQuery("users", () =>
@@ -28,6 +29,9 @@ const UsersPage = () => {
     <>
       <MenuBar />
       <div className={classes.usersPageContainer}>
+        <div className={classes.headerContainer}>
+          <Headers>USERS</Headers>
+        </div>
         <div className={classes.usersList}>
           <ul className={classes.list}>
             {data.map((user) => {

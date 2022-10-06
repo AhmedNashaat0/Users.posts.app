@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import classes from "./AboutUs.module.css";
 import MenuBar from "../../Layout/MenuBar/MenuBar";
 import Footer from "../../Layout/Footer/Footer";
+import Headers from "../../Layout/Headers/Headers";
 
 const AboutUs = () => {
   return (
@@ -9,7 +10,7 @@ const AboutUs = () => {
       <MenuBar />
       <div className={classes.aboutUsContainer}>
         <div className={classes.about}>
-          <h2 className={classes.aboutHeader}>About Us</h2>
+          <Headers>ABOUT</Headers>
           <p>
             This website was made to introduce our list of users and their
             contributions. Every user has his own description such as username,

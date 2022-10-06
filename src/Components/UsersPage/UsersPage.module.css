@@ -1,9 +1,17 @@
 .usersPageContainer {
   padding: 0 110px 0 110px;
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
+.headerContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  /* transform: translateX(-50%); */
+}
 .list {
+  margin-top: 50px;
   list-style: none;
   padding: 0;
   display: grid;

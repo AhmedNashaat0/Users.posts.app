@@ -9,44 +9,11 @@
   align-items: center;
   flex-direction: column;
 }
-
-.about h2 {
-  position: relative;
-  padding-bottom: 15px;
-  border-bottom: 1px solid var(--text-color);
-}
 .about p {
+  width: 70%;
   font-size: 18px;
   text-align: center;
   line-height: 1.8;
-}
-
-.about h2::after {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  bottom: -7px;
-  right: 50%;
-  margin-right: -5px;
-  border: 2px solid var(--text-color);
-  background-color: var(--background-color);
-  animation: animate 2s linear infinite;
-}
-
-/* animation */
-
-@keyframes animate {
-  0% {
-    background-color: var(--orange-color);
-  }
-  50% {
-    background-color: var(--backgroundcolor-color);
-  }
-  100% {
-    background-color: var(--orange-color);
-  }
 }
 
 /* xsmall devices */

@@ -1,0 +1,35 @@
+.headers {
+  position: relative;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--text-color);
+  text-align: center;
+  color: var(--heading-color);
+  width: 150px;
+}
+.headers::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  bottom: -7px;
+  right: 50%;
+  margin-right: -5px;
+  border: 2px solid var(--text-color);
+  background-color: var(--background-color);
+  animation: animate 2s linear infinite;
+}
+
+/* animation */
+
+@keyframes animate {
+  0% {
+    background-color: var(--orange-color);
+  }
+  50% {
+    background-color: var(--backgroundcolor-color);
+  }
+  100% {
+    background-color: var(--orange-color);
+  }
+}

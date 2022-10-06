@@ -10,7 +10,6 @@
   margin-bottom: 40px;
   padding-bottom: 10px;
   border-bottom: 1px solid var(--text-color);
-  width: 32%;
 }
 .userName .userIcon {
   font-size: 34px;
@@ -72,13 +71,19 @@
 }
 /* xsmall devices */
 @media (max-width: 575.9px) {
+  .userName .userIcon {
+    font-size: 18px;
+  }
+  .userName .name {
+    font-size: 16px;
+  }
   .postsPageContainer {
     padding: 0 50px 0 50px;
     grid-template-columns: 100%;
     margin-top: 100px;
   }
 
-  .postCard h2 {
+  .postCard .heading {
     font-size: 18px;
     padding-left: 10px;
   }

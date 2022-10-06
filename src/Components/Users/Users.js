@@ -36,7 +36,7 @@ const Users = (props) => {
         </li>
         <li>
           <FaGlobe className={classes.infoIcons} />
-          <a href={`//${props.website}`} rel="noreferrer" target="_blank">
+          <a href={`http://${props.website}`} rel="noreferrer" target="_blank">
             {props.website}
           </a>
         </li>
